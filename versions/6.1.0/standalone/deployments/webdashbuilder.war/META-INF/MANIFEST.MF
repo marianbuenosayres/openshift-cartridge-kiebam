@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Build-Timestamp: Tue, 1 Apr 2014 07:46:00 +0200
+Implementation-Title: jBPM Dashboard Distributions Builder
+Implementation-Version: 6.1.0.Beta2
+Os-Version: 2.6.32-431.el6.x86_64
+Built-By: kiereleaseuser
+Specification-Vendor: JBoss by Red Hat
+Created-By: Apache Maven
+Os-Name: Linux
+Implementation-URL: http://www.jboss.org/drools/kie-parent-with-depend
+ encies/jbpm-dashboard/jbpm-dashboard-distributions
+Java-Vendor: Sun Microsystems Inc.
+Implementation-Vendor: JBoss by Red Hat
+Scm-Revision: 15e4a44b785f02e8bed90673e49c3466fcf24325
+Implementation-Vendor-Id: org.jbpm.dashboard
+Scm-Url: https://github.com/droolsjbpm/jbpm-dashboard.git/jbpm-dashboa
+ rd-distributions
+Build-Jdk: 1.6.0_45
+Java-Version: 1.6.0_45
+Scm-Connection: scm:git:git@github.com:droolsjbpm/jbpm-dashboard.git/j
+ bpm-dashboard-distributions
+Os-Arch: amd64
+Specification-Title: jBPM Dashboard Distributions Builder
+Specification-Version: 6.1.0.Beta2
+Archiver-Version: Plexus Archiver
+

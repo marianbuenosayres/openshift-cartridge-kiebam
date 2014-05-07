@@ -1,0 +1,21 @@
+description "This is an upstart job file for KIE Workbench"
+
+pre-start script
+bash << "EOF"
+  mkdir -p /var/log/kiebam
+  chown -R kiebam /var/log/kiebam
+EOF
+end script
+
+start on started network-services
+stop on stopped network-services
+respawn
+
+limit nofile 4096 4096
+
+script
+bash << "EOF"
+  su - kiebam
+  /opt/kiebam/jboss/bin/standalone.sh <%= server_opts %> >> /var/log/kiebam/kiebam.log 2>&1
+EOF
+end script

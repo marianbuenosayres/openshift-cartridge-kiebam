@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <groupId>org.jboss</groupId>
+  <artifactId>openshift-cartridge-kiebam</artifactId>
+  <version>6.0.1</version>
+  <packaging>pom</packaging>
+  <modelVersion>4.0.0</modelVersion>
+  <name>KIE Workbench deployed Cartridge</name>
+  <description>KIE Workbench cartridge for OpenShift</description>
+  <properties>
+    <kiebam-version-target>6.1.0</kiebam-version-target>
+  </properties>
+  <scm>
+    <connection>scm:git:git://github.com:marianbuenosayres/openshift-cartridge-kiebam.git</connection>
+    <developerConnection>scm:git:git@github.com:marianbuenosayres/openshift-cartridge-kiebam.git</developerConnection>
+    <url>https://github.com/marianbuenosayres/openshift-cartridge-kiebam</url>
+    <tag>HEAD</tag>
+  </scm>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <url>${site.url}</url>
+  <developers>
+    <developer>
+      <name>Pedro Zapata</name>
+      <id>pzapataf</id>
+      <email>pzapataf@redhat.com</email>
+      <organization>Red Hat</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <name>Mariano De Maio</name>
+      <id>mariano.demaio</id>
+      <email>mariano.demaio@plugtree.com</email>
+      <organization>Plugtree</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>-3</timezone>
+    </developer>
+  </developers>
+
+</project>
+
+
