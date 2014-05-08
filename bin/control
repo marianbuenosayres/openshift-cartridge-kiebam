@@ -174,10 +174,11 @@ function ishttpup() {
 
     # Debugging
     doDebug "Executing: control - ishttpup"
-    
+    echo "Executin: control - ishttpup" 
     count=0
     while [ ${count} -lt 64 ]
     do
+        echo "Looking for ${OPENSHIFT_KIEBAM_IP}:${OPENSHIFT_KIEBAM_HTTP_PORT}"
         if /usr/sbin/lsof -P -n -i "@${OPENSHIFT_KIEBAM_IP}:${OPENSHIFT_KIEBAM_HTTP_PORT}" | grep "(LISTEN)" > /dev/null; then
             echo "Found ${OPENSHIFT_KIEBAM_IP}:${OPENSHIFT_KIEBAM_HTTP_PORT} listening port"
             return 0
@@ -286,7 +287,7 @@ function deploy() {
   # Debugging
   doDebug "Executing: control - deploy"
   
-  echo "Deploying KIE Workbench"
+  echo "Deploying KIE BAM"
 
   # if repo/deployments has any files in it, sync them to $KIEBAM_DEPLOYMENTS_DIR
   # and delete any files in $KIEBAM_DEPLOYMENTS_DIR that don't exist in

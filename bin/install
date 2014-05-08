@@ -151,7 +151,6 @@ client_result "- You can add/modify/show/remove users and roles using the follow
 client_result "   - Users -> ${OPENSHIFT_KIEBAM_CONFIG_PATH}${OPENSHIFT_KIEBAM_USERS_FILE}"
 client_result "   - Roles -> ${OPENSHIFT_KIEBAM_CONFIG_PATH}${OPENSHIFT_KIEBAM_ROLES_FILE}"
 client_result "2.- You can modify the JBoss EAP standalone configuration file used for the KIEBAM application in your cartridge git repository at path ${OPENSHIFT_KIEBAM_CONFIG_PATH}standalone.xml"
-client_result "3.- You can modify the Maven settings configuration file used for the KIEBAM application in your cartridge git repository at path ${OPENSHIFT_KIEBAM_CONFIG_PATH}settings.xml"
 touch ${OPENSHIFT_KIEBAM_DIR}/env/OPENSHIFT_KIEBAM_CLUSTER
 touch ${OPENSHIFT_KIEBAM_DIR}/env/OPENSHIFT_KIEBAM_CLUSTER_REMOTING
 update-configuration java7
