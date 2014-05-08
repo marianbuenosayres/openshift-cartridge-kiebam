@@ -22,7 +22,7 @@
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
 
-<module xmlns="urn:jboss:module:1.1" name="org.jboss.as.product" slot="kiewb">
+<module xmlns="urn:jboss:module:1.1" name="org.jboss.as.product" slot="kiebam">
 
     <resources>
         <resource-root path="dir"/>

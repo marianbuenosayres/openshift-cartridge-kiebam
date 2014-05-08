@@ -8,8 +8,8 @@
   <version>6.0.1</version>
   <packaging>pom</packaging>
   <modelVersion>4.0.0</modelVersion>
-  <name>KIE Workbench deployed Cartridge</name>
-  <description>KIE Workbench cartridge for OpenShift</description>
+  <name>KIE BAM deployed Cartridge</name>
+  <description>KIE BAM cartridge for OpenShift</description>
   <properties>
     <kiebam-version-target>6.1.0</kiebam-version-target>
   </properties>

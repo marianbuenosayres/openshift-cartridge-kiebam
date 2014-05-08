@@ -129,7 +129,7 @@ pushd $OPENSHIFT_KIEBAM_DIR/standalone/configuration/initial > /dev/null
 popd 1> /dev/null
 
 client_result ""
-client_result "KIE Workbench ${version} cartridge installed.  Please make note of these credentials:"
+client_result "KIE BAM ${version} cartridge installed.  Please make note of these credentials:"
 client_result ""
 client_result "             KIEBAM Admin User: $bpmadmin_username"
 client_result "                    Password: $bpmadmin_password"
