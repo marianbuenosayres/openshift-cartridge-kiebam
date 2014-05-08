@@ -179,6 +179,7 @@ function ishttpup() {
     while [ ${count} -lt 64 ]
     do
         echo "Looking for ${OPENSHIFT_KIEBAM_IP}:${OPENSHIFT_KIEBAM_HTTP_PORT}"
+        sleep 100
         if /usr/sbin/lsof -P -n -i "@${OPENSHIFT_KIEBAM_IP}:${OPENSHIFT_KIEBAM_HTTP_PORT}" | grep "(LISTEN)" > /dev/null; then
             echo "Found ${OPENSHIFT_KIEBAM_IP}:${OPENSHIFT_KIEBAM_HTTP_PORT} listening port"
             return 0
