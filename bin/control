@@ -324,6 +324,8 @@ function start() {
     rm -f ${CONFIG_DIR}/standalone.xml
     cp -f ${OPENSHIFT_REPO_DIR}/${OPENSHIFT_KIEBAM_CONFIG_PATH}/standalone.xml ${CONFIG_DIR}/standalone.xml
     
+    echo "Executin ${KIEBAM_BIN_DIR}/standalone.sh > ${OPENSHIFT_TMP_DIR}/${cartridge_type}.log 2>&1 &"
+
     ${KIEBAM_BIN_DIR}/standalone.sh > ${OPENSHIFT_TMP_DIR}/${cartridge_type}.log 2>&1 &
     PROCESS_ID=$!
     echo "$PROCESS_ID" > ${KIEBAM_PID_FILE}
