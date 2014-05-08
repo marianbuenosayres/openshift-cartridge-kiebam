@@ -24,10 +24,9 @@ ln -s ${OPENSHIFT_KIEBAM_DIR}/versions/${version}/share ${OPENSHIFT_KIEBAM_DIR}
 ln -s ${OPENSHIFT_KIEBAM_DIR}/versions/${version}/jboss/modules ${OPENSHIFT_KIEBAM_DIR}/jboss
 ln -s ${OPENSHIFT_KIEBAM_DIR}/versions/${version}/jboss/jboss-modules.jar ${OPENSHIFT_KIEBAM_DIR}/jboss
 cp -f ${OPENSHIFT_KIEBAM_DIR}/template/${OPENSHIFT_KIEBAM_CONFIG_PATH}/standalone.xml ${OPENSHIFT_KIEBAM_DIR}/standalone/configuration/standalone.xml 
-ln -s ${OPENSHIFT_KIEBAM_DIR}/template/${OPENSHIFT_KIEBAM_CONFIG_PATH}/settings.xml ${OPENSHIFT_KIEBAM_M2_REPO}/settings.xml
 
-ln -s ${OPENSHIFT_KIEBAM_DIR}/versions/${version}/standalone/deployments/kie-wb.war ${OPENSHIFT_KIEBAM_DIR}/standalone/deployments/kie-wb.war
-ln -s ${OPENSHIFT_KIEBAM_DIR}/versions/${version}/standalone/deployments/kie-wb.war.dodeploy ${OPENSHIFT_KIEBAM_DIR}/standalone/deployments/kie-wb.war.dodeploy
+ln -s ${OPENSHIFT_KIEBAM_DIR}/versions/${version}/standalone/deployments/webdashbuilder.war ${OPENSHIFT_KIEBAM_DIR}/standalone/deployments/webdashbuilder.war
+ln -s ${OPENSHIFT_KIEBAM_DIR}/versions/${version}/standalone/deployments/webdashbuilder.war.dodeploy ${OPENSHIFT_KIEBAM_DIR}/standalone/deployments/webdashbuilder.war.dodeploy
 
 
 sed -i "s/{APP_NAME}/${OPENSHIFT_APP_NAME}/g" ${OPENSHIFT_KIEBAM_DIR}/template/pom.xml

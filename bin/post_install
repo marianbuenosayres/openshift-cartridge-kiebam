@@ -10,6 +10,3 @@ rm -f "${OPENSHIFT_KIEBAM_DIR}/standalone/configuration/${OPENSHIFT_KIEBAM_ROLES
 ln -s "${OPENSHIFT_REPO_DIR}/${OPENSHIFT_KIEBAM_CONFIG_PATH}/${OPENSHIFT_KIEBAM_USERS_FILE}" "${OPENSHIFT_KIEBAM_DIR}/standalone/configuration/${OPENSHIFT_KIEBAM_USERS_FILE}"
 ln -s "${OPENSHIFT_REPO_DIR}/${OPENSHIFT_KIEBAM_CONFIG_PATH}/${OPENSHIFT_KIEBAM_ROLES_FILE}" "${OPENSHIFT_KIEBAM_DIR}/standalone/configuration/${OPENSHIFT_KIEBAM_ROLES_FILE}"
 
-# Once the developer git repository (located at ${OPENSHIFT_REPO_DIR}) is initialized, add symlinks of the maven settings.xml file in developer repository to <M2_REPO>/settings.xml
-rm -f "${OPENSHIFT_KIEBAM_M2_REPO}/settings.xml"
-ln -s "${OPENSHIFT_REPO_DIR}/${OPENSHIFT_KIEBAM_CONFIG_PATH}/settings.xml" "${OPENSHIFT_KIEBAM_M2_REPO}/settings.xml"
